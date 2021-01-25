@@ -216,12 +216,14 @@
 \NewInfoField{email}{\faAt}[mailto:]
 \NewInfoField{mailaddress}{\faEnvelope}
 \NewInfoField{phone}{\faPhone}
-\NewInfoField{homepage}{\faGlobe}[https://]
+% TODO: replace with https:// as soon as LetsEncrypt is set up
+\NewInfoField{homepage}{\faGlobe}[http://]
 \NewInfoField{twitter}{\faTwitter}[https://twitter.com/]
 \NewInfoField{linkedin}{\faLinkedin}[https://linkedin.com/in/]
 \NewInfoField{github}{\faGithub}[https://github.com/]
 \NewInfoField{orcid}{\aiOrcid}[https://orcid.org/]
 \NewInfoField{location}{\faMapMarker}
+\NewInfoField{gitlabgwdg}{\faGitlab}[https://gitlab.gwdg.de/]
 
 % v1.2: Support for multiple photos
 \newlength{\altacv@photos@width}

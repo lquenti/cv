@@ -73,23 +73,17 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
-%% sample.bib contains your publications
-\addbibresource{sample.bib}
-
 \begin{document}
-\name{Your Name Here}
-\tagline{Your Position or Tagline Here}
+\name{Lars Quentin}
+\tagline{Informatikstudent, Programmierer}
 
 \personalinfo{%
-  % Not all of these are required!
-  \email{your_name@email.com}
-  \phone{000-00-0000}
-  \mailaddress{Åddrésş, Street, 00000 Cóuntry}
-  \location{Location, COUNTRY}
-  \homepage{www.homepage.com}
-  \twitter{@twitterhandle}
-  \linkedin{your_id}
-  \github{your_id}
+  \email{lars.quentin@stud.uni-goettingen.de}
+  \location{G\"ottingen, Deutschland}
+  \homepage{lquenti.de}
+  \github{lquenti}
+  \gitlabgwdg{lars.quentin}
+  \linkedin{lars-quentin-68375217a}
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
   % \orcid{0000-0000-0000-0000}
   %% You can add your own arbtrary detail with
@@ -111,142 +105,94 @@
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
 \begin{paracol}{2}
-\cvsection{Experience}
+\cvsection{Berufliche Laufbahn}
 
-\cvevent{Job Title 1}{Company 1}{Month 20XX -- Ongoing}{Location}
+\cvevent{IT-Support und Webentwickler}{Max-Planck-Institut f\"ur biophysikalische Chemie}{2017 September -- heute}{G\"ottingen, Deutschland}
+\cvtag{Python}
+\cvtag{Django}
+\cvtag{Linux}
+\cvtag{Clientsupport}
+\medskip
 \begin{itemize}
-\item Job description 1
-\item Job description 2
+\item T\"agliches L\"osen komplexer IT-Probleme
+\item Entwurf und Implementation eines Webfrontends f\"ur\\Dateiarchivierung in Django
 \end{itemize}
 
 \divider
 
-\cvevent{Job Title 2}{Company 2}{Month 20XX -- Ongoing}{Location}
+\cvevent{Full-Stack PHP-Entwickler}{Universit\"at des Dritten Lebensalters G\"ottingen e.V.}{2020 Februar -- 2021 Januar}{G\"ottingen}
+\cvtag{PHP}
+\cvtag{ES6+}
+\cvtag{Bootstrap}
+\cvtag{docker}
+\medskip
 \begin{itemize}
-\item Job description 1
-\item Job description 2
-\end{itemize}
-
-\cvsection{Projects}
-
-\cvevent{Project 1}{Funding agency/institution}{}{}
-\begin{itemize}
-\item Details
+\item Wartung und Weiterentwicklung eines internen PHP-Frameworks
 \end{itemize}
 
 \divider
 
-\cvevent{Project 2}{Funding agency/institution}{Project duration}{}
-A short abstract would also work.
+\cvevent{Tutor Programmierpraktikum}{Georg-August-Universit\"at G\"ottingen}{2019 April -- 2019 Oktober}{G\"ottingen}
+\cvtag{Java}
+\cvtag{Git}
+\cvtag{Swing}
+\cvtag{Graphentheorie}
+\medskip
+\begin{itemize}
+\item Betreuung von Bachelorstudenten
+\item Aufgabe: Videospiel in Java implementieren (rundenbasiert)
+\item Durchschnittsnote meiner Gruppen: 1,4
+\end{itemize}
+
+\cvsection{Letzten Projekte}
+
+\cvevent{Dieser Lebenslauf}{}{}{}
+Geschrieben in \LaTeX, \href{https://github.com/lquenti/cv}{https://github.com/lquenti/cv}
+
+\divider
+
+\cvevent{Programmierkurs f\"ur Juristen}{eLegal e.V., \href{elegal-göttingen.de}{elegal-göttingen.de}}{}{}
+\begin{itemize}
+\item Eine Einf\"uhrung f\"ur an Legal-Tech interessierten Studenten
+\item Zur Lehre entstanden: \href{https://github.com/elegal-ev/Keres}{Keres, eine Word-Templateengine mit GUI}
+\end{itemize}
 
 \medskip
-
-\cvsection{A Day of My Life}
-
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-\wheelchart{1.5cm}{0.5cm}{%
-  6/8em/accent!30/{Sleep,\\beautiful sleep},
-  3/8em/accent!40/Hopeful novelist by night,
-  8/8em/accent!60/Daytime job,
-  2/10em/accent/Sports and relaxation,
-  5/6em/accent!20/Spending time with family
-}
 
 % use ONLY \newpage if you want to force a page break for
 % ONLY the current column
 \newpage
 
-\cvsection{Publications}
-
-\nocite{*}
-
-\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}},type=article]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
-
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
 \switchcolumn
 
-\cvsection{My Life Philosophy}
+\cvsection{Technologien}
 
-\begin{quote}
-``Something smart or heartfelt, preferably in one sentence.''
-\end{quote}
-
-\cvsection{Most Proud of}
-
-\cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}
-
+\cvskill{Python}{5}
 \divider
-
-\cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
-
+\cvskill{Linux}{5}
 \divider
-
-\cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
-
-\cvsection{Strengths}
-
-\cvtag{Hard-working}
-\cvtag{Eye for detail}\\
-\cvtag{Motivator \& Leader}
-
-\divider\smallskip
-
-\cvtag{C++}
-\cvtag{Embedded Systems}\\
-\cvtag{Statistical Analysis}
-
-\cvsection{Languages}
-
-\cvskill{English}{5}
+\cvskill{Java}{4}
 \divider
-
-\cvskill{Spanish}{4}
+\cvskill{PHP}{3}
 \divider
-
-\cvskill{German}{3}
-
-%% Yeah I didn't spend too much time making all the
-%% spacing consistent... sorry. Use \smallskip, \medskip,
-%% \bigskip, \vpsace etc to make ajustments.
-\medskip
-
-\cvsection{Education}
-
-\cvevent{Ph.D.\ in Your Discipline}{Your University}{Sept 2002 -- June 2006}{}
-Thesis title: Wonderful Research
-
+\cvskill{Git}{3}
 \divider
+\cvskill{C}{3}
 
-\cvevent{M.Sc.\ in Your Discipline}{Your University}{Sept 2001 -- June 2002}{}
-
+\cvsection{Ausbildung}
+\cvevent{Angewandte Informatik B.Sc}{Georg-August-Universit\"at G\"ottingen}{2017 Oktober -- heute}{}
 \divider
+\cvevent{Fachhochschulreife Informatik}{BBS 2 G\"ottingen}{2015 -- 2017}{}
 
-\cvevent{B.Sc.\ in Your Discipline}{Stanford University}{Sept 1998 -- June 2001}{}
-
-% \divider
-
-\cvsection{Referees}
-
-% \cvref{name}{email}{mailing address}
-\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
-{Address Line 1\\Address line 2}
-
-\divider
-
-\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
-{Address Line 1\\Address line 2}
-
+\cvsection{Interessen}
+\cvtag{Serverapplikationen}\\
+\cvtag{Algorithmen \& Datenstrukturen}\\
+\cvtag{Programmiersprachen}
+\cvtag{Typsicherheit}
+\cvtag{Systementwicklung}
+\cvtag{HPC}
 
 \end{paracol}
 
