@@ -1,6 +1,6 @@
 # My current CV, for now just in German
 
-![CV](./cv.png)
+[MY CV](./cv.pdf)
 
 Initally based on [AltaCV, v1.3.3](https://github.com/liantze/AltaCV)
 
