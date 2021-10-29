@@ -1,6 +1,6 @@
 # My current CV, for now just in German
 
-![My CV as an Image][./cv.png]
+![My CV as an Image](./cv.png)
 
 [MY CV](./cv.pdf)
 
