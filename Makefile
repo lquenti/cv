@@ -22,7 +22,7 @@ build: clean
 
 # Requires Imagemagick
 screenshot: build
-	convert -density 300 $(BUILD_FOLDER)/$(PACKAGE_NAME).pdf -resize 50% $(PACKAGE_NAME).png
+	convert -density 300 $(BUILD_FOLDER)/$(PACKAGE_NAME).pdf -resize 30% $(PACKAGE_NAME).png
 
 # lets not think about that
 .phony: all clean build screenshot
