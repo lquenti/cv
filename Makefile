@@ -16,6 +16,7 @@ build: clean
 	cd $(BUILD_FOLDER) && \
 	cp ../$(PACKAGE_NAME).tex ../altacv.cls . && \
 	$(TEX) $(PACKAGE_NAME).tex && \
+	$(TEX) $(PACKAGE_NAME).tex && \
 	cd .. && \
 	cp $(BUILD_FOLDER)/$(PACKAGE_NAME).pdf .
 	echo "🥳 PDF successfully built! 🥳"
