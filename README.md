@@ -1,6 +1,8 @@
 # My current CV
 
-![My CV as an Image](./cv.png)
+![My CV as an Image (p1)](./cv-0.png)
+
+![My CV as an Image (p2)](./cv-1.png)
 
 [MY CV](./cv.pdf)
 
